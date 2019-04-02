@@ -6,11 +6,24 @@ export const MENU_ITEMS: NbMenuItem[] = [
     icon: 'nb-e-commerce',
     link: '/pages/dashboard',
     home: true,
+    data: {
+      permission: 'view',
+      resource: 'admin'
+    }
   },
   {
     title: 'IoT Dashboard',
     icon: 'nb-home',
     link: '/pages/iot-dashboard',
+  },
+  {
+    title: 'Tasks',
+    icon: 'nb-home',
+    link: '/pages/tasks',
+    data: {
+      permission: 'view',
+      resource: 'admin'
+    }
   },
   {
     title: 'FEATURES',
