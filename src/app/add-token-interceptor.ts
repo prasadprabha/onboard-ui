@@ -10,6 +10,7 @@ export class AddTokenInterceptor implements HttpInterceptor {
     intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
        this.tokenService.get().subscribe((token: NbAuthJWTToken) => {
           if (token.isValid()) {
+              console.log("Token is intercepted!!!!!!");
                let user : User = token.getPayload();
                localStorage.setItem('currentUser', JSON.stringify(user));
                let tokenValue = token.getValue();

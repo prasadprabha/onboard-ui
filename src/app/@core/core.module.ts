@@ -108,7 +108,7 @@ export const NB_CORE_PROVIDERS = [
         },
         logout: {
           endpoint: '/auth/logout',
-          method: 'post',
+          method: 'delete',
           redirect: {
               success: '/auth/login',
               failure: '/',
