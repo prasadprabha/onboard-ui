@@ -16,15 +16,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { ThemeModule } from './@theme/theme.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {AuthGuard} from './auth.guard';
+import { DynamicFormComponent } from './components/dynamic-form/dynamic-form.component';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, DynamicFormComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
 
     NgbModule.forRoot(),
     ThemeModule.forRoot(),

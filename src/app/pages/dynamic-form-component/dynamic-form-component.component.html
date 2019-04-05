@@ -1,0 +1,31 @@
+
+<div class="row">
+  <div class="col-md-6">
+    <nb-card>
+      <nb-card-header>Using the Grid</nb-card-header>
+      <nb-card-body>
+          <form [formGroup]="form" (submit)="submitForm()">
+
+              <ng-template ngFor let-input [ngForOf]="mockForm">
+                <ng-container [ngSwitch]="input.controlType">
+                
+                   <ng-template [ngSwitchCase]="'text'">
+                    <div class="form-group row">
+                      <label [for]="input.controlName" class="col-sm-3 col-form-label"> {{input.controlName}}</label>
+                      <div class="col-sm-9">
+                      <input [formControlName]="input.controlName" [type]="text" class="form-control" />
+                    </div>
+                    </div>
+                  </ng-template>
+            
+                  
+                </ng-container>
+              </ng-template>
+              
+              <div class="form-group row">
+                  <div class="offset-sm-3 col-sm-9">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </div>
+            </form>
+       
