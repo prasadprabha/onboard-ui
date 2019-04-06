@@ -11,6 +11,6 @@ export class TaskService {
   constructor(private httpClient: HttpClient) {}
 
   public getProcess(roles:string[]){
-    return this.httpClient.get('http://localhost:8888/onboard/form-fields/?roles='+roles);
+    return this.httpClient.get('http://localhost:8888/onboard/get-task-for-group/?groupId='+roles);
 }
 }

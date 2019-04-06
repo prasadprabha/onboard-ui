@@ -15,11 +15,11 @@ export class UserTaskComponent implements OnInit {
   settings = {
     actions: false,
     columns: {
-      TaskID: {
+      id: {
         title: 'Task ID',
         type: 'string',
       },
-      TaskName: {
+      name: {
         title: 'Task Name',
         type: 'string',
       }
@@ -37,6 +37,7 @@ export class UserTaskComponent implements OnInit {
            let roles = user.roles
            this.taskService.getProcess(roles).subscribe((res:any[])=>{
             this.data = res;
+            console.log(res);
             this.source.load(this.data);
            });
       }

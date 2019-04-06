@@ -181,6 +181,12 @@ export const NB_CORE_PROVIDERS = [
           create: ['approval'],
           remove: '*',
         },
+        inductionteam: {
+          parent: 'guest',
+          view : ['induction'],
+          create: ['approval'],
+          remove: '*'
+        },
         admin: {
           parent: 'guest',
           view : ['admin'],
