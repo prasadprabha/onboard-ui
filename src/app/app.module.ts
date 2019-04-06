@@ -20,6 +20,7 @@ import { DynamicFormComponent } from './components/dynamic-form/dynamic-form.com
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
+
 @NgModule({
   declarations: [AppComponent, DynamicFormComponent],
   imports: [

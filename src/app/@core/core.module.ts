@@ -182,6 +182,7 @@ export const NB_CORE_PROVIDERS = [
           remove: '*',
         },
         admin: {
+          parent: 'guest',
           view : ['admin'],
           create: ['user'],
           remove: ['user'],

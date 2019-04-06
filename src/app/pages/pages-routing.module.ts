@@ -6,6 +6,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ECommerceComponent } from './e-commerce/e-commerce.component';
 import { NotFoundComponent } from './miscellaneous/not-found/not-found.component';
 import {DynamicFormComponentComponent} from './dynamic-form-component/dynamic-form-component.component'
+import {UserTaskComponent} from './user-task/user-task.component'
 
 const routes: Routes = [{
   path: '',
@@ -16,6 +17,9 @@ const routes: Routes = [{
   },{
     path: 'tasks',
     component: DynamicFormComponentComponent,
+  },{
+    path: 'usertasks',
+    component: UserTaskComponent,
   }, {
     path: 'iot-dashboard',
     component: DashboardComponent,

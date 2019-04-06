@@ -17,12 +17,21 @@ export const MENU_ITEMS: NbMenuItem[] = [
     link: '/pages/iot-dashboard',
   },
   {
-    title: 'Tasks',
+    title: 'Initiate OnBoarding',
     icon: 'nb-home',
     link: '/pages/tasks',
     data: {
       permission: 'view',
       resource: 'admin'
+    }
+  },
+  {
+    title: 'Tasks',
+    icon: 'nb-home',
+    link: '/pages/usertasks',
+    data: {
+      permission: 'view',
+      resource: 'dashboard'
     }
   },
   {
